@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body style="background-color: rgb(252, 217, 240);">
+    <nav style="background-color: rgb(250, 230, 230);">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="border: 3px solid rgb(236, 4, 4); width: 6%;">
+                <img src="./images/logo-social.png" alt="logo" width="100%" height="100%">
+            </div>
+            <div style="width: 35%; font-size: 25px; padding-top: 25px; display: flex;justify-content: space-between;">
+                <a href="index.html">Home</a>
+                <a href="create.html">Create</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div style="padding-top: 25px;">
+                <form action="https://www.google.com">
+                    <input type="search" style="width: 100%;" placeholder="search here">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+            <div style="padding-top: 25px;">
+                <button style="font-size: 20px;"><a href="register.html">Register</a></button>
+            </div>
+        </div>
+    </nav>
+    <center>
+        <div style="width: 40%; background-color: rgb(232, 250, 222);">
+            <h1 style="color: red;">REGISTRATION</h1>
+            <p>Fill these form to register yourself</p>
+            <hr>
+            <form action="#">
+                <label for="name">Enter your name :</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br>
+                <br>
+                <label for="db">Enter your date of birth :</label>
+                <input type="date" id="db" name="date" placeholder="Enter your date of birth" required>
+                <br>
+                <br>
+                <label for="num">Enter your mobile number :</label>
+                <input type="number" id="num" name="num" placeholder="Enter your mobile number" required>
+                <br>
+                <br>
+                <label for="mail">Enter your Email :</label>
+                <input type="email" id="mail" name="mail" value="@gmail.com" required>
+                <br>
+                <br>
+                <label for="pass">Password :</label>
+                <input type="password" id="pass" name="password" placeholder="Password" required>
+                <br>
+                <br>
+                <label for="pass1"> Confirm Password :</label>
+                <input type="password" id="pass1" name="password" placeholder="Password" required>
+                <hr>
+                <button><a href="login.html">Register</a></button>
+            </form>
+            <p>Already have account?<a href="login.html">Login</a></p>
+        </div>
+        <br>
+        <br>
+        <center>
+            <footer>
+                <div style="background-color: rgb(156, 156, 240);">
+                    copyright &copy; www.logo.com All rights reserved!
+                </div>
+            </footer>
+        </center>
+</body>
+
+</html>

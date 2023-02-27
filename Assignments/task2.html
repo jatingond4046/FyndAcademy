@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+
+<body>
+    <!-- 1. can we use nseted iframes
+         2. study about - sandbox attribute
+                        - marginwidth and marginheight attributes -->
+    <h1>1. Nested Iframes</h1>
+    <iframe src="./task3.html" frameborder="1" title="outer" width="500" height="500">
+
+    </iframe>
+    <h1>Sandbox Attribute</h1>
+    <iframe src="./task4.html" frameborder="1" sandbox="allow-pointer-lock" width="500" height="500"
+        marginwidth="10"></iframe>
+    <p>The sandbox attribute enables an extra set of restrictions for the content in the iframe.</p>
+    <p>When the sandbox attribute is present, and it will:</p>
+    <ul>
+        <li>treat the content as being from a unique origin</li>
+        <li>block form submission</li>
+        <li>block script execution</li>
+        <li>disable APIs</li>
+        <li>prevent links from targeting other browsing contexts</li>
+    </ul>
+    <h1>marginwidth and marginheight</h1>
+    <p>The purpose of the HTML marginwidth and marginheight attribute is to specify the width and height of the margins
+        in a frame or iframe.</p>
+
+</body>
+
+</html>

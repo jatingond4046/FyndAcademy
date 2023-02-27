@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- 1. can we replace * mask in type=passsword in forms by @ or # or anything
+         2. cerate a form using all forms input type  -->
+    <h2>Changing mask element</h2>
+    <p>To chnge the masked feild of password from . to * we just havs to put style style="-webkit-text-security: ;</p>
+    <h3>Exapmle :</h3>
+    <form>
+        <label for="psw">Masking with :(*)</label>
+        <input id="psw" type="password" />
+        <br>
+        <br>
+        <label for="pass1">Masking with :(#)</label>
+        <input id="pass1" type="password">
+    </form>
+    <hr>
+    <p>forms using various input types</p>
+    <form action="#">
+        <label for="name">Enter your name :</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <br>
+        <br>
+        <label for="num">Enter your number :</label>
+        <input type="number" id="num" name="number" placeholder="Your number" required>
+        <br>
+        <br>
+        <label for="Email">Enter your Email :</label>
+        <input type="email" id="Email" name="Email" placeholder="your email" value="@gmail.com" required>
+        <br>
+        <br>
+        <label for="gender">Enter your gender :</label>
+        <br>
+        <input type="radio" id="" name="gender" placeholder="gender" value="Male" required>Male
+        <br>
+        <input type="radio" id="" name="gender" placeholder="gender" value="female" required>Female
+        <br>
+        <br>
+        <label for="db">Enter your date of birth :</label>
+        <input type="date" id="db" name="dateofbirth" placeholder="date of birth" required>
+        <br>
+        <br>
+        <label for="color">Enter your favourite colour :</label>
+        <input type="color" id="color" name="color">
+        <br>
+        <br>
+        <label for="time">Enter preferred work time :</label>
+        <input type="time" id="time" name="time">
+        <br>
+        <br>
+        <label for="check">Hobbies :</label>
+        <br>
+        <input type="checkbox" id="check1" name="hobby" placeholder="hobby">Study
+        <input type="checkbox" id="check2" name="hobby" placeholder="hobby">Singing
+        <input type="checkbox" id="check3" name="hobby" placeholder="hobby">Dancing
+        <input type="checkbox" id="check4" name="hobby" placeholder="hobby">Playing Basketball
+        <input type="checkbox" id="check5" name="hobby" placeholder="hobby">Travelling
+        <br>
+        <br>
+        <label for="pass">Enter Password :</label>
+        <input type="password" id="pass" name="password" placeholder="Enter password" required>
+        <br>
+        <br>
+        <input type="submit" id="submit" name="submit">
+        <br>
+        <br>
+    </form>
+</body>
+
+</html>
