@@ -64,6 +64,17 @@
 
         #lt {
             font-size: 30px;
+            text-decoration: underline red!;
+        }
+
+        img {
+            display: none
+        }
+
+        span:hover+img {
+            display: block;
+            position: relative;
+            background-color: red;
         }
     </style>
 </head>
@@ -90,7 +101,9 @@
             <tbody>
                 <tr>
                     <th id="th">MONDAY</th>
-                    <td id="ht">HTML</td>
+                    <td id="ht"><span>HTML</span>
+                        <img src="./images/th.jfif" alt="">
+                    </td>
                     <td id="cs">CSS</td>
                     <td id="js">JAVASCRIPT</td>
                     <td id="lt" rowspan="6">Lunch Time</td>
