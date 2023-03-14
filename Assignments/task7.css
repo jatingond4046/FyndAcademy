@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(26, 235, 235);
+}
+
+h1 {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+    font-size: 50px;
+    text-decoration: underline red;
+}
+
+h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: brown;
+    font-size: 30px;
+    text-decoration: underline red;
+}
+
+
+.first {
+    background-color: rgb(250, 241, 216);
+    width: 100%;
+    height: 250px;
+}
+
+.outer {
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(247, 226, 226);
+}
+
+.a {
+    border-top: 4px solid;
+}
+
+.b {
+    border-right: 4px solid red;
+}
+
+.c {
+    border-bottom: 4px solid blue;
+}
+
+.d {
+    border-left: 4px solid yellow;
+}
+
+.e {
+    border-top: 4px solid green;
+    border-right: 4px solid navy;
+}
+
+.f {
+    border-right: 4px solid orange;
+    border-bottom: 4px solid white;
+}
+
+.g {
+    border-bottom: 4px solid pink;
+    border-left: 4px solid gray;
+}
+
+.h {
+    border-left: 4px solid darkcyan;
+    border-top: 4px solid darkorange;
+}
+
+.i {
+    border-top: 4px solid darkred;
+    border-bottom: 4px solid;
+}
+
+.j {
+    border-right: 4px solid darkorchid;
+    border-left: 4px solid darkmagenta;
+}
+
+.k {
+    border: 4px solid red;
+}
+
+.l {
+    border: 4px dotted green;
+}
+
+.m {
+    border: 4px dashed yellow;
+}
+
+.n {
+    border: 4px double blue;
+}
+
+.o {
+    border: 4px groove brown;
+}
+
+.p {
+    border: 4px ridge darkgoldenrod;
+}
+
+.q {
+    border: 4px inset darkgreen;
+}
+
+.r {
+    border: 4px outset darkblue;
+}
+
+.s {
+    border-style: solid dotted;
+    border-color: aquamarine;
+}
+
+.t {
+    border-style: dotted dashed;
+    border-color: brown;
+}
+
+.u {
+    border-style: dashed double;
+    border-color: chocolate;
+}
+
+.v {
+    border-style: double groove;
+    border-color: crimson;
+}
+
+.w {
+    border-style: solid dotted dashed double;
+    border-color: chartreuse;
+}
+
+.x {
+    border-style: groove ridge inset outset;
+    border-color: cyan;
+}
+
+.y {
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 10px;
+    border-radius: 10px;
+}
+
+.z {
+    border: 10px dotted green;
+    border-radius: 30px;
+}
+.aa {
+    border:20px groove brown;
+    border-radius: 15px;
+}
+.bb {
+    border:15px inset yellow;
+    border-radius: 40px;
+}
+.cc {
+    border: 20px double;
+    border-radius: 100px;
+}
