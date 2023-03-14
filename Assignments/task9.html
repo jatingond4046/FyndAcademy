@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .outer {
+            border: 3px solid red;
+            width: 400px;
+            height: 400px;
+        }
+
+        .inner1 {
+            border: 3px solid green;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .fl {
+            display: flex;
+        }
+
+        .rel {
+            position: relative;
+        }
+
+        .abs {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- position relative and absolute -->
+    <section>
+        <div class="outer fl">
+            <div class="inner1"></div>
+            <div class="inner1"></div>
+            <div class="inner1"></div>
+        </div>
+        <div class="outer">
+            <div class="inner1">
+                <div class="inner1">
+                    <div class="inner1"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="outer fl">
+            <div class="inner1"></div>
+            <div class="inner1"></div>
+            <div class="inner1"></div>
+            <div class="inner1"></div>
+        </div>
+    </section>
+    <section>
+        <div class="outer fl">
+            <div class="inner1"></div>
+            <div class="inner1"> </div>
+            <div class="inner1 abs"> </div>
+        </div>
+        <div class="outer">
+            <div class="inner1 rel">
+                <div class="inner1 abs rel">
+                    <div class="inner1 abs"></div>
+                </div>
+            </div>
+        </div>
+        <div class="outer fl">
+            <div class="inner1 rel">
+                <div class="inner1 abs"></div>
+            </div>
+            <div class="inner1 rel">
+                <div class="inner1 abs"></div>
+            </div>
+
+    </section>
+
+</body>
+
+</html>
