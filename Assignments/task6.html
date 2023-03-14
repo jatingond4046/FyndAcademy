@@ -7,16 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Table</title>
     <style>
-        div {
-            display: flex;
-            justify-content: center;
-        }
-
         table {
             border: 2px solid black;
             width: 80%;
             font-size: 20px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
             text-align: center;
         }
 
@@ -34,8 +29,8 @@
         }
 
         td {
-            /* font-weight: bold; */
             color: black;
+            align-items: center;
         }
 
         #dy {
@@ -64,23 +59,39 @@
 
         #lt {
             font-size: 30px;
-            text-decoration: underline red!;
+            text-decoration: underline red;
+        }
+
+        .div1 {
+            position: relative;
+        }
+
+        .div2 {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+
+        .div1:hover .div2 {
+            display: block;
+            width: 200px;
+            height: 200px;
+           z-index: 1;
         }
 
         img {
-            display: none
-        }
-
-        span:hover+img {
-            display: block;
-            position: relative;
-            background-color: red;
+            width: 200px;
+            height: 200px;
         }
     </style>
 </head>
 
 <body>
-    <div>
+    <!-- create a table for your time table which shows the images of professors when you hover on the subjects  -->
+    <center>
         <table>
             <caption>TIME-TABLE</caption>
             <thead>
@@ -89,7 +100,6 @@
                     <th colspan="6">Time in hours</th>
                 </tr>
                 <tr>
-
                     <th>10:11</th>
                     <th>11:12</th>
                     <th>12:1</th>
@@ -101,54 +111,204 @@
             <tbody>
                 <tr>
                     <th id="th">MONDAY</th>
-                    <td id="ht"><span>HTML</span>
-                        <img src="./images/th.jfif" alt="">
+                    <td id="ht">
+                        <div class="div1"><span>HTML</span>
+                            <div class="div2">
+                                <img src="./images/html.jpg" alt="html">
+                            </div>
+                        </div>
                     </td>
-                    <td id="cs">CSS</td>
-                    <td id="js">JAVASCRIPT</td>
+
+                    <td id="cs">
+                        <div class="div1">CSS
+                            <div class="div2">
+                                <img src="./images/css.png" alt="css">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="js">
+                        <div class="div1">JAVASCRIPT
+                            <div class="div2">
+                                <img src="./images/javascript.jpg" alt="js">
+                            </div>
+                        </div>
+                    </td>
                     <td id="lt" rowspan="6">Lunch Time</td>
-                    <td id="rjs">REACT</td>
-                    <td id="njs">NODEJS</td>
+                    <td id="rjs">
+                        <div class="div1">REACT
+                            <div class="div2">
+                                <img src="./images/react.jfif" alt="rjs">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="njs">
+                        <div class="div1">NODEJS
+                            <div class="div2">
+                                <img src="./images/node.jpg" alt="njs">
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th id="th">TUESDAY</th>
-                    <td id="cs">CSS</td>
-                    <td id="js">JAVASCRIPT</td>
-                    <td id="rjs">REACT</td>
-                    <td id="njs">NODEJS</td>
-                    <td id="ht">HTML</td>
+                    <td id="cs">
+                        <div class="div1">CSS
+                            <div class="div2">
+                                <img src="./images/css.png" alt="css">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="js">
+                        <div class="div1">JAVASCRIPT
+                            <div class="div2">
+                                <img src="./images/javascript.jpg" alt="js">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="rjs">
+                        <div class="div1">REACT
+                            <div class="div2">
+                                <img src="./images/react.jfif" alt="rjs">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="njs">
+                        <div class="div1">NODEJS
+                            <div class="div2">
+                                <img src="./images/node.jpg" alt="njs">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="ht">
+                        <div class="div1">HTML
+                            <div class="div2">
+                                <img src="./images/html.jpg" alt="html">
+                            </div>
+                        </div>
+
+                    </td>
                 </tr>
                 <tr>
                     <th id="th">WEDNESDAY</th>
-                    <td id="js">JAVASCRIPT</td>
-                    <td id="rjs">REACT</td>
-                    <td id="njs">NODEJS</td>
-                    <td id="ht">HTML</td>
-                    <td id="cs">CSS</td>
+                    <td id="js">
+                        <div class="div1">JAVASCRIPT
+                            <div class="div2">
+                                <img src="./images/javascript.jpg" alt="js">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="rjs">
+                        <div class="div1">REACT
+                            <div class="div2">
+                                <img src="./images/react.jfif" alt="rjs">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="njs">
+                        <div class="div1">NODEJS
+                            <div class="div2">
+                                <img src="./images/node.jpg" alt="njs">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="ht">
+                        <div class="div1">HTML
+                            <div class="div2">
+                                <img src="./images/html.jpg" alt="html">
+                            </div>
+                        </div>
+
+                    </td>
+                    <td id="cs">
+                        <div class="div1">CSS
+                            <div class="div2">
+                                <img src="./images/css.png" alt="css">
+                            </div>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <th id="th">THURSDAY</th>
-                    <td id="rjs">REACT</td>
-                    <td id="njs">NODEJS</td>
-                    <td id="ht">HTML</td>
-                    <td id="cs">CSS</td>
-                    <td id="js">JAVASCRIPT</td>
+                    <td id="rjs">
+                        <div class="div1">REACT
+                            <div class="div2">
+                                <img src="./images/react.jfif" alt="rjs">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="njs">
+                        <div class="div1">NODEJS
+                            <div class="div2">
+                                <img src="./images/node.jpg" alt="njs">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="ht">
+                        <div class="div1">HTML
+                            <div class="div2">
+                                <img src="./images/html.jpg" alt="html">
+                            </div>
+                        </div>
+
+                    </td>
+                    <td id="cs">
+                        <div class="div1">CSS
+                            <div class="div2">
+                                <img src="./images/css.png" alt="css">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="js">
+                        <div class="div1">JAVASCRIPT
+                            <div class="div2">
+                                <img src="./images/javascript.jpg" alt="js">
+                            </div>
+                        </div>
+                    </td>
 
                 </tr>
                 <tr>
                     <th id="th">FRIDAY</th>
-                    <td id="njs">NODEJS</td>
-                    <td id="ht">HTML</td>
-                    <td id="cs">CSS</td>
-                    <td id="js">JAVASCRIPT</td>
-                    <td id="rjs">REACT</td>
+                    <td id="njs">
+                        <div class="div1">NODEJS
+                            <div class="div2">
+                                <img src="./images/node.jpg" alt="njs">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="ht">
+                        <div class="div1">HTML
+                            <div class="div2">
+                                <img src="./images/html.jpg" alt="html">
+                            </div>
+                        </div>
+
+                    </td>
+                    <td id="cs">
+                        <div class="div1">CSS
+                            <div class="div2">
+                                <img src="./images/css.png" alt="css">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="js">
+                        <div class="div1">JAVASCRIPT
+                            <div class="div2">
+                                <img src="./images/javascript.jpg" alt="js">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="rjs">
+                        <div class="div1">REACT
+                            <div class="div2">
+                                <img src="./images/react.jfif" alt="rjs">
+                            </div>
+                        </div>
+                    </td>
                 </tr>
             </tbody>
-            <tfoot>
-                <tr></tr>
-            </tfoot>
         </table>
-    </div>
+    </center>
 </body>
 
 
