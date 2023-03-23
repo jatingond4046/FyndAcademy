@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aln {
+            border: 2px solid red;
+            width: 90%;
+            padding: 20px;
+        }
+
+        .a {
+            text-align: left;
+        }
+
+        .b {
+            text-align: right;
+        }
+
+        .c {
+            text-align: center;
+        }
+
+        .d {
+            text-align-last: justify;
+        }
+
+        .e {
+            vertical-align: -1cm;
+            background-color: yellow;
+        }
+
+        .f {
+            vertical-align: super;
+            background-color: yellow;
+        }
+
+        .g {
+            vertical-align: sub;
+            background-color: yellow;
+        }
+
+        .h {
+            vertical-align: 1cm;
+            background-color: yellow;
+        }
+
+        .i {
+            vertical-align: 80%;
+            background-color: yellow;
+        }
+
+        .j {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+            text-decoration: underline blue 2px;
+        }
+
+        .k {
+            direction: rtl;
+            unicode-bidi: normal;
+            text-decoration: underline wavy brown 2px;
+        }
+
+        .l {
+            direction: rtl;
+            unicode-bidi: embed;
+            text-decoration: underline overline green 2px;
+        }
+
+        .m {
+            direction: rtl;
+            unicode-bidi: plaintext;
+            text-decoration: dotted yellow 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- explore text allign -->
+    <div class="aln">
+        <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            corporis optio Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            corporis optio?</p>
+        <p class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            corporis optio
+            deleniti ullam exercitationem pariatur repellendus praesentium ut recusandae sit non consequuntur aliquam
+            consequatur, voluptatum et?</p>
+        <p class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            corporis optio
+            deleniti ullam exercitationem pariatur repellendus praesentium ut recusandae sit non consequuntur aliquam
+            consequatur, voluptatum et?</p>
+        <p class="d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            corporis optio
+            deleniti ullam exercitationem pariatur repellendus praesentium ut recusandae sit non consequuntur aliquam
+            consequatur, voluptatum et?</p>
+
+    </div>
+    <!-- explore vertical allign -->
+    <div class="aln">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            <span class="e">corporis optio
+                deleniti ullam exercitationem pariatur repellendus praesentium ut </span>recusandae sit non consequuntur
+            aliquam
+            consequatur, voluptatum et?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            <span class="f">corporis optio
+                deleniti ullam exercitationem pariatur repellendus praesentium ut </span>recusandae sit non consequuntur
+            aliquam
+            consequatur, voluptatum et?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            <span class="g">corporis optio
+                deleniti ullam exercitationem pariatur repellendus praesentium ut </span>recusandae sit non consequuntur
+            aliquam
+            consequatur, voluptatum et?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            <span class="h">corporis optio
+                deleniti ullam exercitationem pariatur repellendus praesentium ut </span>recusandae sit non consequuntur
+            aliquam
+            consequatur, voluptatum et?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi iusto odio tempore
+            <span class="i">corporis optio
+                deleniti ullam exercitationem pariatur repellendus praesentium ut </span>recusandae sit non consequuntur
+            aliquam
+            consequatur, voluptatum et?
+        </p>
+    </div>
+    <!-- explore unicode-bidi and shorthand property for text decoration-->
+    <div class="aln">
+        <p class="j">this is para1</p>
+        <p class="k">this is para2</p>
+        <p class="l">this is para3</p>
+        <p class="m">this is para4</p>
+    </div>
+    
+</body>
+
+</html>

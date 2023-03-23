@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./images/iphone.jfif">
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 2px solid blue;
+            background-color: cadetblue;
+            position: absolute;
+            left: 35%;
+            margin-top: 100px;
+            padding-top: 50px;
+            padding-left: 100px;
+            z-index: 1;
+        }
+
+        .d1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            position: absolute;
+            background-color: rgb(233, 129, 129);
+        }
+
+        .up {
+            top: 10%;
+            left: 25%;
+            /* z-index: -1; */
+        }
+
+        .below {
+            top: 60%;
+            left: 60%;
+            z-index: 1;
+        }
+
+        img {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            border: 3px solid pink;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./images/clear_road.jpg" alt="">
+    </div>
+    <div class="d1 up">
+        <img src="./images/batman-pixel-art.gif" alt="">
+    </div>
+    <div class="d1 below">
+        <img src="./images/batman-pixel-art.gif" alt="">
+    </div>
+
+</body>
+
+</html>

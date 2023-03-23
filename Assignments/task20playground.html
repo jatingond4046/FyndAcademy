@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border: 2px solid red;
+            height: 100vh;
+            background-color: rgb(240, 188, 111);
+        }
+
+        .d1 {
+            border: 3px solid;
+        }
+
+        :where(.d1:hover) {
+            background-color: rgb(211, 63, 63);
+        }
+
+        .container:has(.left:hover) {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .container:has(.middle:hover) {
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        .container:has(.right:hover) {
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d1 left"></div>
+        <div class="d1 middle"></div>
+        <div class="d1 right"></div>
+    </div>
+
+</body>
+
+</html>

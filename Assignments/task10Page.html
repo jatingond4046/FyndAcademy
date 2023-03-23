@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav1 {
+            width: 100%;
+            height: 300px;
+            background-image: url(./images/grass.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.6;
+        }
+
+        .nav2 {
+            width: 85%;
+            height: 60px;
+            border: 4px solid brown;
+            margin-top: 10px;
+            margin-left: 95px;
+            border-radius: 40px;
+            position: sticky;
+            top: 15px;
+        }
+
+        input {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav1">
+    </nav>
+    <nav class="nav2">
+        <form action="https://www.google.com/search">
+            <input type="search" id="srch" name="q" placeholder="Search">
+            <input type="submit" value="Submit">
+        </form>
+    </nav>
+</body>
+
+</html>

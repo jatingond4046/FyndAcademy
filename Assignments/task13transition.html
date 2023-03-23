@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .div1 {
+            position: relative;
+            border: 2px solid black;
+            width: 35%;
+            height: 600px;
+
+        }
+
+        .a,
+        .b,
+        .c,
+        .d {
+            position: absolute;
+            border: 3px solid;
+            border-left: 5px solid red;
+            width: 200px;
+            height: 200px;
+        }
+
+        .a {
+            top: 30%;
+            left: 10%;
+            transform: rotate(-100deg);
+        }
+
+        .b {
+            top: 20.5%;
+            left: 23.5%;
+            transform: rotate(-60deg);
+        }
+
+        .c {
+            top: 22%;
+            left: 40%;
+            transform: rotate(-20deg);
+        }
+
+        .d {
+            top: 33.3%;
+            left: 51.8%;
+            transform: rotate(-340deg);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .div2 {
+            border: 2px solid;
+            width: 65%;
+            background-image: url(./images/grass.jpg);
+        }
+        .inner-div {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 120px;
+        }
+
+        .contain-1 {
+            width: 350px;
+            height: 350px;
+        }
+
+        .contain-2 {
+            top: 100%;
+            left: 40%;
+            width: 50%;
+            height: 150px;
+        }
+
+        .a:hover {
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 50) 0px 5px 15px;
+        }
+
+        .b:hover {
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 50) 0px 5px 15px;
+        }
+
+        .c:hover {
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 50) 0px 5px 15px;
+        }
+
+        .d:hover {
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 50) 0px 5px 15px;
+        }
+
+        .a:hover .div2{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="a">
+            <img src="./images/iphone.jfif" alt="">
+        </div>
+        <div class="b">
+            <img src="./images/iphone.jfif" alt="">
+        </div>
+        <div class="c">
+            <img src="./images/iphone.jfif" alt="">
+        </div>
+        <div class="d">
+            <img src="./images/iphone.jfif" alt="">
+        </div>
+
+    </div>
+    <div class="div2">
+        <div class="inner-div">
+            <div class="contain-1">
+                <img src="./images/iphone.jfif" alt="">
+            </div>
+            <div class="contain-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum obcaecati, ducimus sunt unde eius
+                corporis
+                ab deleniti ullam ea rem, illo esse deserunt quos nesciunt perspiciatis aperiam expedita fuga
+                tempora!SSS
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

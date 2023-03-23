@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 {
+            background-color:rgb(182, 180, 180);
+            position: relative;
+            width: 90%;
+            height: 600px;
+            border: 2px solid;
+        }
+
+        .d2 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            animation-name: jk;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-delay: 5s;
+        }
+
+        @keyframes jk {
+            0% {
+                border: 5px solid black;
+                background-color: white;
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                border-radius: 25px;
+                border: 5px solid white;
+                background-color: black;
+                left: 82.5%;
+                top: 0;
+            }
+
+            50% {
+                border-radius: 50px;
+                border: 5px solid yellow;
+                background-color: red;
+                left: 82.5%;
+                top: 65%;
+            }
+
+            75% {
+                border-radius: 75px;
+                border: 5px solid red;
+                background-color: blue;
+                left: 0;
+                top: 65%;
+            }
+
+            100% {
+                border-radius: 100px;
+                border: 5px solid aqua;
+                background-color: green;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="d1">
+            <div class="d2"></div>
+        </div>
+    </center>
+</body>
+
+</html>

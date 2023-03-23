@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .jk {
+            background-color: rgb(211, 248, 248);
+            color: white;
+        }
+
+        .a,
+        .b,
+        .c {
+            width: 80px;
+            height: 40px;
+            background-color: brown;
+            border: 2px solid white;
+        }
+
+        .a {
+            transition: 2s;
+        }
+
+        .b {
+            transition: 12s;
+        }
+
+        .c {
+            transition: 6s;
+        }
+
+        .jk:hover .a {
+            width: 400px;
+            transition: 2s;
+        }
+
+        .jk:hover .b {
+            width: 400px;
+            transition: 12s;
+        }
+
+        .jk:hover .c {
+            width: 400px;
+            transition: 6s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jk">
+        <div class="a">HOME</div>
+        <br>
+        <div class="b">CONTACT US</div>
+        <br>
+        <div class="c">ABOUT US</div>
+    </div>
+</body>
+
+</html>
