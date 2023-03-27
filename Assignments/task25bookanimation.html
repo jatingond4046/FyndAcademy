@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,108 @@
         body {
             width: 100vw;
             height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(245, 217, 212);
+            box-sizing: border-box;
         }
+
+        .d1 {
+            width: 200px;
+            height: 300px;
+            border: 2px solid green;
+            background-color: antiquewhite;
+            border-radius: 4px;
+            margin-left: 200px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            border-radius: 50%;
+            box-shadow: -6px 6px 8px red;
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+
+        .p1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 600;
+            font-size: 25px;
+            margin-top: 20px;
+            margin-left: 20px;
+            color: rgba(255, 255, 255, 0.918);
+            text-shadow: -4px 4px 6px red;
+        }
+
+        .p2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 600;
+            font-size: 35px;
+            margin-top: -15px;
+            margin-left: 55px;
+            color: rgba(255, 255, 255, 0.925);
+            text-shadow: -4px 4px 7px red;
+        }
+
+        .main {
+            background: url(./images/crackers1.gif);
+            position: absolute;
+            
+        }
+
+        .upper {
+            /* background-image: repeating-conic-gradient(rgba(255, 0, 0, 0.8) 0% 1%,rgba(0, 128, 0, 0.8) 0% 2%,rgba(0, 0, 255, 0.8) 0% 3%,rgba(255, 255, 0, 0.8) 0% 4%); */
+            background-image: linear-gradient(45deg, red 20%, green 40%, blue 60%, yellow 80%);
+            position: absolute;
+            transition: 3s;
+        }
+
+        .trans {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            position: relative;
+            transition: 3s;
+        }
+
+        .trans:hover {
+            transform: rotate(-20deg);
+            transform: skew(20deg);
+        }
+
+        .trans:hover .upper {
+            transform-origin: left;
+            transform: rotateY(180deg);
+            /* animation-name: card;
+            animation-duration: 3s; */
+        }
+
+        /* @keyframes card {
+            0%{
+
+            }
+            100%{
+                transform-origin: left;
+            transform: rotateY(180deg);
+            transition-duration: 3s;
+            }
+        } */
     </style>
 </head>
+
 <body>
-    <div></div>
-    <div></div>
+    <div class="trans">
+        <div class="d1 main">
+            <img src="./images/cake1.gif" alt="">
+            <p class="p1">HAPPY BIRTHDAY</p>
+            <p class="p2">ISHIKA</p>
+        </div>
+        <div class="d1 upper"></div>
+    </div>
 </body>
+
 </html>
